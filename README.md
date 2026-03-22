@@ -4,7 +4,7 @@ A clean, beginner-friendly Neovim config built on [normie-nvim](https://github.c
 
 <img width="2506" height="1345" alt="image" src="https://github.com/user-attachments/assets/73aa14da-be85-4bc4-9425-9d3cc65289c7" />
 <img width="2507" height="1345" alt="image" src="https://github.com/user-attachments/assets/70a33cb2-62d1-4778-9c6c-aac8b5b19a2a" />
-<img width="2505" height="1346" alt="image" src="https://github.com/user-attachments/assets/c6d248a8-6fbc-44ad-baa8-cbdf08d0e511" />
+<img width="2506" height="1344" alt="image" src="https://github.com/user-attachments/assets/3bbfa97b-cf11-489d-9a1e-950e3adf3e1d" />
 
 ---
 
