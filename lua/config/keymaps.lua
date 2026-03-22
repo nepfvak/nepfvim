@@ -81,7 +81,7 @@ map('n', '<leader>ft', '<cmd>TodoTelescope<CR>', { desc = 'Find TODOs' })
 map('n', '<leader><leader>', '<cmd>lua Snacks.picker.files()<CR>', { desc = 'Find files' })
 
 -- ── LSP ──────────────────────────────────────────────────────────────────────
-map('n', 'gd', '<cmd>lua Snacks.picker.lsp_definitions()<CR>', { desc = 'Go to definition' })
+map('n', 'gd', '<cmd>lua Snacks.picker.lsp_definitions()<CR>', { desc = 'Go to definition', nowait = true })
 map('n', 'gr', '<cmd>lua Snacks.picker.lsp_references()<CR>', { desc = 'Go to references' })
 map('n', 'gi', '<cmd>lua Snacks.picker.lsp_implementations()<CR>', { desc = 'Go to implementations' })
 map('n', 'gt', '<cmd>lua Snacks.picker.lsp_type_definitions()<CR>', { desc = 'Go to type definition' })
@@ -124,3 +124,23 @@ end, { desc = 'Cheatsheet' })
 map('n', '<leader>mp', '<cmd>MarkdownPreview<CR>', { desc = 'Markdown preview' })
 map('n', '<leader>mt', '<cmd>MarkdownPreviewToggle<CR>', { desc = 'Toggle markdown preview' })
 map('n', '<leader>ms', '<cmd>MarkdownPreviewStop<CR>', { desc = 'Stop markdown preview' })
+
+-- Open opencode in a terminal split
+vim.keymap.set('n', '<leader>oc', function()
+  vim.cmd 'split | terminal opencode'
+end, { desc = 'Open opencode' })
+
+-- Launch opencode in a terminal split
+vim.keymap.set("n", "<leader>oc", function()
+  vim.cmd("split | terminal opencode")
+end, { desc = "Open opencode" })
+
+-- Launch opencode in a vertical split
+vim.keymap.set("n", "<leader>oc", function()
+  vim.cmd("vsplit | terminal opencode")
+end, { desc = "Open opencode" })
+
+-- Launch opencode in a vertical split
+vim.keymap.set("n", "<leader>oc", function()
+  vim.cmd("vsplit | terminal opencode")
+end, { desc = "Open opencode" })

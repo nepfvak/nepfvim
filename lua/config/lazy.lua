@@ -27,6 +27,18 @@ require 'config.autocmds'
 
 -- Setup diagnostics
 require('utils.diagnostics').setup()
+-- Load .env file
+local env_file = vim.fn.stdpath 'config' .. '/.env'
+local f = io.open(env_file, 'r')
+if f then
+  for line in f:lines() do
+    local key, val = line:match '^(.-)=(.+)$'
+    if key and val then
+      vim.fn.setenv(key, val)
+    end
+  end
+  f:close()
+end
 
 -- Setup lazy.nvim
 require('lazy').setup {

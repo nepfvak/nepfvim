@@ -3,6 +3,15 @@
 -- ABOUT : automatically run code on defined events (e.g. save, yank)
 -- ================================================================================================
 
+-- Open snacks explorer on startup
+vim.api.nvim_create_autocmd('VimEnter', {
+  callback = function()
+    if vim.fn.argc() == 0 then
+      Snacks.explorer()
+    end
+  end,
+})
+
 -- Disable some mini plugins for snacks dashboard buffer
 vim.api.nvim_create_autocmd('User', {
   pattern = 'SnacksDashboardOpened',

@@ -27,7 +27,7 @@ NVIM_CONFIG_DEST="$HOME/.config/nvim"
 BACKUP_DIR="$HOME/.config/nvim.backup.$(date +%Y%m%d_%H%M%S)"
 
 # Repo URL for piped installation
-REPO_URL="https://gitlab.com/theblackdon/normie-nvim.git"
+REPO_URL="https://github.com/nepfvak/nepfvim.git"
 
 # ================================================================================================
 # Helper Functions
@@ -118,6 +118,7 @@ install_packages_arch() {
 		fd \
 		fzf \
 		base-devel \
+		opencode-bin \
 		2>&1 | grep -v "warning: " || true
 
 	print_success "Arch packages installed"
